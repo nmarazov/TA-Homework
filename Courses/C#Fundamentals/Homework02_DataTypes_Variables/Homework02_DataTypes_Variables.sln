@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01_DeclareVariables", "01_DeclareVariables\01_DeclareVariables.csproj", "{8462883F-ACEB-429E-8A19-D2269FBF9C0F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02_FloatOrDouble", "02_FloatOrDouble\02_FloatOrDouble.csproj", "{0FE5BD11-06FC-4863-ABC6-EBCE1D9D03D7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASCII", "ASCII\ASCII.csproj", "{33C4C258-F678-47DC-9EF8-CDF04489F0FA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8462883F-ACEB-429E-8A19-D2269FBF9C0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8462883F-ACEB-429E-8A19-D2269FBF9C0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8462883F-ACEB-429E-8A19-D2269FBF9C0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8462883F-ACEB-429E-8A19-D2269FBF9C0F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0FE5BD11-06FC-4863-ABC6-EBCE1D9D03D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FE5BD11-06FC-4863-ABC6-EBCE1D9D03D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FE5BD11-06FC-4863-ABC6-EBCE1D9D03D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FE5BD11-06FC-4863-ABC6-EBCE1D9D03D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33C4C258-F678-47DC-9EF8-CDF04489F0FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33C4C258-F678-47DC-9EF8-CDF04489F0FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33C4C258-F678-47DC-9EF8-CDF04489F0FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33C4C258-F678-47DC-9EF8-CDF04489F0FA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

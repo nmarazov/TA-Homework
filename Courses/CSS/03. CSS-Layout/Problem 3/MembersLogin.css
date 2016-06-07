@@ -1,0 +1,88 @@
+#container {
+  color: #A8A8A8;
+  width: 660px;
+  height: 300px;
+  border-radius: 10px;
+  background-color: #3B3B3B;
+  margin: auto;
+}
+hr {
+  margin: 0px;
+    height: 12px;
+    border: 0;
+    box-shadow: inset 0 -12px 12px -12px rgba(0, 0, 0, 0.8);
+
+}
+header {
+  border-radius: 10px;
+  height: 65px;
+}
+
+#login {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  display: inline;
+  padding-left: 15px;
+  padding-top: 20px;
+  margin: 0px;
+  float: left;
+}
+
+#monitor {
+  float: left;
+  padding-top: 7px;
+  padding-left: 7px;
+}
+
+input[type="text"] {
+  width: 145px;
+  height: 20px;
+  margin-top: 22px;
+  margin-left: 10px;
+}
+
+input[type="email"] {
+  width: 145px;
+  height: 20px;
+  margin-left: 20px;
+  margin-right: 10px;
+}
+
+input[type="submit"] {
+  background: url("../images/submit.png");
+  width: 65px;
+  height: 40px;
+  vertical-align: bottom;
+  border: 0;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: normal;
+  color: #FFD820;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+section {
+  font-family: Calibri;
+  color: #A8A8A8;
+  padding-left: 12px;
+}
+article {
+  margin: 10px;
+}
+article > p {
+  margin: 3px;
+
+}
+
+a {
+  color: #A8A8A8;
+  text-decoration: none;
+}
+
+span {
+  color: white;
+}

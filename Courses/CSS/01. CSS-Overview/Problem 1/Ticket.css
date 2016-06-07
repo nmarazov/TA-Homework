@@ -1,0 +1,38 @@
+      table {
+        font-size: 12px;
+        font-family: sans-serif;
+        background-color: #595959;
+        text-align: left;
+        line-height: 1.6em;
+      }
+      td {
+        color: white;
+      }
+      a {
+        text-decoration: none;
+      }
+      .colorYellow, a {
+        color: #FEF196;
+      }
+      .colorRed {
+        color: red;
+      }
+      .colorBrown {
+        color: #C36153;
+      }
+      .colorGrey {
+        color: #ADBAAA;
+      }
+      .italic {
+        font-style: italic;
+      }
+      #firstCol {
+        width: 100px;
+      }
+      #secondCol {
+        width: 200px
+      }
+      #idNumber {
+        color: #ADBAAA;
+        font-size: 18px;
+      }

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Problem 1. Tree view</title>
+    <style media="screen">
+      ul {
+        list-style-type: none;
+        width: 100px;
+      }
+      ul ul {
+        color: grey;
+        display: none;
+      }
+      li:hover ul {
+        display:block;
+        padding-left: 1em;
+      }
+      .mainList:hover::first-line {
+        text-decoration: underline;
+      }
+
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li class="mainList">List item 1
+        <ul>
+          <li>Sublist item 1</li>
+          <li>Sublist item 2</li>
+          <li>Sublist item 3</li>
+          <li>Sublist item 4</li>
+        </ul>
+      </li>
+      <li class="mainList">List item 2
+        <ul>
+          <li>Sublist item 1</li>
+          <li>Sublist item 2</li>
+          <li>Sublist item 3</li>
+          <li>Sublist item 4</li>
+        </ul>
+      </li>
+      <li class="mainList">List item 3
+        <ul>
+          <li>Sublist item 1</li>
+          <li>Sublist item 2</li>
+          <li>Sublist item 3</li>
+          <li>Sublist item 4</li>
+        </ul>
+      </li>
+      <li class="mainList">List item 4
+        <ul>
+          <li>Sublist item 1</li>
+          <li>Sublist item 2</li>
+          <li>Sublist item 3</li>
+          <li>Sublist item 4</li>
+        </ul>
+      </li>
+    </ul>
+  </body>
+</html>

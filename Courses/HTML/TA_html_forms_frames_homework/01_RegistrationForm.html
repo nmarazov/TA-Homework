@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Registration Form</title>
+  </head>
+  <body>
+    <form name="regForm" method="post">
+      <table border="1px">
+        <colgroup>
+          <col width="150px" align="center"></col>
+          <col width="400px"></col>
+        </colgroup>
+        <tfoot>
+          <tr>
+            <td colspan="2" align="center">
+              <input type="submit" name="submitBtn" value="Submit">
+              <input type="reset" name="reset" value="Clear This Form">
+            </td>
+          </tr>
+        </tfoot>
+        <tbody>
+          <tr>
+            <td align="right"><label for="lastName">Last Name</label></td>
+            <td><input type="text" id="lastName" placeholder="Peshev"></td>
+          </tr>
+          <tr>
+            <td align="right"><label for="firstName">First Name</label></td>
+            <td><input type="text" id="firstName"  placeholder="Pesho"></td>
+          </tr>
+          <tr>
+            <td align="right"><label for="address">Address</label></td>
+            <td><textarea id="address"  rows="4" cols="25"></textarea></td>
+          </tr>
+          <tr>
+            <td align="right"><label for="city">City</label></td>
+            <td>
+              <input type="text" id="city" placeholder="Sofia">
+              <label for="state">State</label>
+              <input type="text" id="state" placeholder="Sofia">
+            </td>
+          </tr>
+          <tr>
+            <td align="right"><label for="zipCode">Zip/Postal Code</label></td>
+            <td><input type="text" id="zipCode" placeholder="1234"></td>
+          </tr>
+          <tr>
+            <td align="right"><label for="country">Country</label></td>
+            <td>
+              <select class="" id="country">
+                <option value="bg" selected="selected">Bulgaria</option>
+                <option value="gb">Great Britain</option>
+                <option value="us">USA</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td align="right"><label for="phoneNumber">Phone (country code, area code, number)</label></td>
+            <td>
+              (+<input type="text" id="countryCode" placeholder="359" style="width: 30px">)
+              <input type="text" id="areacode" placeholder="888" style="width: 30px">-
+              <input type="text" id="phoneNumber" placeholder="123456" style="width: 60px">
+            </td>
+          </tr>
+          <tr>
+            <td align="right"><label for="email">E-mail</label></td>
+            <td><input type="text" id="email" placeholder="p.peshev@mail.bg"></td>
+          </tr>
+          <tr>
+            <td align="right"><label for="">Birth Day</label></td>
+            <td>
+              <label for="month">Month</label>
+              <input type="text" id="month" value="" style="width: 20px">
+              <label for="day">Day</label>
+              <input type="text" id="day" value="" style="width: 20px">
+              <label for="year">Year(4 digit)</label>
+              <input type="text" id="year" value="" style="width: 40px">
+            </td>
+          </tr>
+          <tr>
+            <td align="right"><label for="gender">Gender</label></td>
+            <td>
+              <select class="" id="gender">
+                <option value="" disabled="disabled" selected="selected">Please select your gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td align="right"><label for="">Starting Date</label></td>
+            <td>
+              <input type="radio" id="spring2006" name="sDate" value="spring 2006">
+              <label for="spring2006">Spring 2006</label>
+              <input type="radio" id="summer2006" name="sDate" value="summer 2006">
+              <label for="summer2006">Summer 2006</label>
+            </td>
+          </tr>
+          <tr>
+            <td align="right"><label for="comment">Comments/Questions</label></td>
+            <td><textarea id="comment" rows="5" cols="30" resize=""></textarea></td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,12 @@
+p {
+  font-family: consolas;
+  text-indent: 1em;
+  color: #0094ff
+}
+  p::first-letter {
+    font-family: Edwardian Script ITC;
+    font-size: 3em;
+  }
+  p::first-line {
+    font-weight: bold;
+  }

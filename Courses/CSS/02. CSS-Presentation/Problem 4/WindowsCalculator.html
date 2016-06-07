@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Calculator</title>
+  <link type="text/css" rel="stylesheet" href="WindowsCalculator.css"/>
+</head>
+
+<body>
+  <div id="calculator-window">
+    <div id="calculator-canvas">
+      <div id="top-menu">
+        <ul>
+          <li><span class="menu-shortcut">V</span>iew</li>
+          <li><span class="menu-shortcut">E</span>dit</li>
+          <li><span class="menu-shortcut">H</span>elp</li>
+        </ul>
+      </div>
+      <input type="text" id="result" class="border" name="result" value="8854455"/>
+      <div id="binary-numbers" class="border">
+        <ul>
+          <li>0000</li>
+          <li>0000</li>
+          <li>0000</li>
+          <li>0000</li>
+          <li>0000</li>
+          <li>0000</li>
+          <li>0000</li>
+          <li>0000</li>
+        </ul>
+        <ul>
+          <li>63</li>
+          <li>47</li>
+          <li>32</li>
+        </ul>
+        <ul>
+          <li>0000</li>
+          <li>0000</li>
+          <li>0000</li>
+          <li>0000</li>
+          <li>0000</li>
+          <li>0000</li>
+          <li>0000</li>
+          <li>0000</li>
+        </ul>
+        <ul>
+          <li>31</li>
+          <li>15</li>
+          <li> 0</li>
+        </ul>
+      </div>
+      <div id="aside-numeral-systems">
+        <div class="border system">
+          <span><input type="radio" name="numeral-system" value="Hex" >Hex</span>
+          <span><input type="radio" name="numeral-system" id="isDec" value="Dec" checked>Dec </span>
+          <span><input type="radio" name="numeral-system" value="Oct">Oct </span>
+          <span><input type="radio" name="numeral-system" value="Bin">Bin</span>
+        </div>
+        <div class="border system">
+          <span><input type="radio" name="number-bits" id="isQword" value="Qword" checked >Qword </span>
+          <span><input type="radio" name="number-bits" value="Dword" >Dword </span>
+          <span><input type="radio" name="number-bits" value="Word">Word </span>
+          <span><input type="radio" name="number-bits" value="Byte">Byte </span>
+        </div>
+      </div>
+      <div id="buttons">
+        <div class="row">
+          <button class="button-disabled" disabled>&nbsp;</button>
+          <button class="button-enabled">Mod</button>
+          <button class="button-disabled" disabled>A</button>
+          <button class="button-state">MC</button>
+          <button class="button-state">MR</button>
+          <button class="button-state">MS</button>
+          <button class="button-state">M+</button>
+          <button class="button-state">M-</button>
+        </div>
+        <div class="row">
+          <button class="button-enabled">(</button>
+          <button class="button-enabled">)</button>
+          <button class="button-disabled" disabled>B</button>
+          <button class="button-enabled">&larr;</button>
+          <button class="button-enabled">CE</button>
+          <button class="button-enabled">C</button>
+          <button class="button-enabled">&#177;</button>
+          <button class="button-disabled" disabled>&#8730;</button>
+        </div>
+        <div class="row">
+          <button class="button-enabled">RoL</button>
+          <button class="button-enabled">RoR</button>
+          <button class="button-disabled" disabled>C</button>
+          <button class="button-numerical">7</button>
+          <button class="button-numerical">8</button>
+          <button class="button-numerical">9</button>
+          <button class="button-enabled">/</button>
+          <button class="button-disabled" disabled>%</button>
+        </div>
+        <div class="row">
+          <button class="button-enabled">Or</button>
+          <button class="button-enabled">Xor</button>
+          <button class="button-disabled" disabled>D</button>
+          <button class="button-numerical">4</button>
+          <button class="button-numerical">5</button>
+          <button class="button-numerical">6</button>
+          <button class="button-enabled">*</button>
+          <button class="button-disabled"disabled>1/&chi;</button>
+        </div>
+        <button id="equals" class="button-enabled">=</button>
+        <div class="row">
+          <button class="button-enabled">Lsh</button>
+          <button class="button-enabled">Rsh</button>
+          <button class="button-disabled" disabled>E</button>
+          <button class="button-numerical">1</button>
+          <button class="button-numerical">2</button>
+          <button class="button-numerical">3</button>
+          <button class="button-enabled">-</button>
+        </div>
+        <div class="row">
+          <button class="button-enabled">Not</button>
+          <button class="button-enabled">And</button>
+          <button class="button-disabled" disabled>F</button>
+          <button id="zero" class="button-numerical">0</button>
+          <button class="button-disabled" disabled>.</button>
+          <button class="button-enabled">+</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

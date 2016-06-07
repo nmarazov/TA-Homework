@@ -1,0 +1,177 @@
+div#calculator-window{
+width:400px;
+height:350px;
+background-color:#BBDBFB;
+border:1px solid black;
+border-radius:5px;
+padding: 25px 5px 5px 5px;
+}
+#calculator-canvas{
+background-color:#D9E4F1;
+border:1px solid #7B7B7B;
+border-radius:1px;
+font-size:14px;
+height:345px;
+width:396px;
+}
+#top-menu{
+background-color:#EDF0F8;
+color: black;
+text-align:left;
+border-bottom:1px solid #B6BCCC;
+background: white;
+}
+#top-menu>ul{
+padding:2px 2px 2px 5px;
+margin:0px;
+}
+#top-menu>ul>li{
+list-style:none;
+display:inline;
+margin-right:15px;
+}
+.menu-shortcut{
+text-decoration:underline;
+}
+#result{
+width:95%;
+height:40px;
+float:center;
+text-align:right;
+background-color:#E9F1FB;
+color:black;
+font-family: Arial;
+font-size:16px;
+margin: 10px 10px 5px 10px;
+padding: 1px;
+background: rgb(229,239,250);
+}
+.border{
+border:1px solid #8E9CAD;
+border-radius:5px;
+}
+#binary-numbers{
+width: 95%;
+height:60px;
+margin: 0px 10px 3px 10px;
+padding: 1px;
+}
+#binary-numbers>ul:nth-child(2n+1){
+padding:0px 0px 0px 2px;
+margin:0px;
+color:black;
+height:14px;
+}
+#binary-numbers>ul:nth-child(2n){
+margin:0px;
+color: grey;
+padding:0px 0px 0px 2px;
+height:14px;
+}
+#binary-numbers>ul:nth-child(2n+1)>li{
+font-family: Consolas;
+font-size:13px;
+list-style: none;
+display: inline;
+margin-right: 7.5px;
+margin-left:7.5px;
+}
+#binary-numbers>ul:nth-child(2n)>li{
+font-family: Consolas;
+font-size:13px;
+margin-right: 162px;
+list-style: none;
+display: inline;
+margin-left:7.5px;
+}
+#binary-numbers>ul:nth-child(2n)>li:nth-child(2){
+margin-right:130px;
+}
+#binary-numbers>ul:nth-child(2n)>li:last-child{
+margin-right:0px;
+}
+#binary-numbers>ul:last-child>li:nth-child(2){
+margin-right:137px;
+}
+#buttons{
+display: inline-block;
+float: right;
+width:75%;
+}
+.row{
+margin: 5px 0px 0px 0px;
+}
+button{
+border-radius:5px;
+padding:0px 0px 0px 0px;
+font-size:13px;
+margin-right: 2px;
+font-family: Segoe UI;
+height: 23px;
+width: 31px;
+color: #1E395B;
+outline: none;
+}
+.button-enabled:hover,.button-numerical:hover, .button-state:hover{
+background: #fef4c5;
+border: 1px solid ;
+}
+.button-numerical{
+padding:0px 0px 0px 0px;
+line-height: 23px;
+font-size: 15px;
+border: 1px solid;
+background-color: #F3FBFF;
+}
+.button-state
+{
+font-size:11px;
+line-height: 23px;
+border: 1px solid ;
+background-color: #D9E4F1;
+
+}
+.button-enabled
+{
+padding:0px 0px 0px 0px;
+line-height: 23px;
+font-size: 11px;
+border: 1px solid ;
+background: rgb(237,243,249);
+}
+.button-disabled
+{
+border: 1px solid #B4C2D1;
+background-color: #D9E4F1;
+}
+#zero
+{
+width: 67px;
+}
+#equals
+{
+margin-top: 5px;
+margin-right: 7px;
+float: right;
+height: 51px;
+}
+#aside-numeral-systems
+{
+float: left;
+width:20%;
+display: inline-block;
+padding:5px 0px 10px 10px;
+}
+#aside-numeral-systems div span
+{
+font-size:12px;
+font-family: Segoe UI;
+display:block;
+margin: 0px 0px 1x 0px;
+padding:0px 0px 1px 0px;
+text-align:left;
+}
+#aside-numeral-systems div.border.system+div.border.system
+{
+margin-top:5px;
+}
