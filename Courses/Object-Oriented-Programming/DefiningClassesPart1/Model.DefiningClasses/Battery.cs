@@ -27,6 +27,7 @@
             {
                 return this.hoursIdle;
             }
+
             set
             {
                 if (value <= 0)
@@ -44,6 +45,7 @@
             {
                 return this.hoursTalk;
             }
+
             set
             {
                 if (value <= 0)
@@ -59,17 +61,17 @@
         {
             var print = new StringBuilder();
 
-            if (Type != null)
+            if (this.Type != null)
             {
                 print.AppendFormat("    Type: {0}\n\r", this.Type);
             }
 
-            if (HoursIdle != null)
+            if (this.HoursIdle != null)
             {
                 print.AppendFormat("    HoursIdle: {0}\n\r", this.HoursIdle);
             }
 
-            if (HoursTalk != null)
+            if (this.HoursTalk != null)
             {
                 print.AppendFormat("    HoursTalk: {0}\n\r", this.HoursTalk);
             }

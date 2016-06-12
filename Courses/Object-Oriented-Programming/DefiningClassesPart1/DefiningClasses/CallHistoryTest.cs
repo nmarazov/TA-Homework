@@ -1,16 +1,15 @@
 ﻿namespace DefiningClasses
 {
-    using Model.DefiningClasses;
     using System;
     using System.Text;
+    using Model.DefiningClasses;
 
     public class CallHistoryTest
     {
         public static void CallHistoryTestPrint()
         {
-            var myPhone = new Gsm("THL", "China", "Niki", 200.5M,
-                new Battery(BatteryType.Li_Ion, 60, 20),
-                new Display(5.5M, 16000000));
+            var myPhone = new Gsm(
+                "THL", "China", "Niki", 200.5M, new Battery(BatteryType.Li_Ion, 60, 20), new Display(5.5M, 16000000));
 
             Console.WriteLine(myPhone);
 

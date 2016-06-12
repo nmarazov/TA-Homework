@@ -24,6 +24,7 @@
             {
                 return this.size;
             }
+
             set
             {
                 if (value < 1 || value > 7)
@@ -41,6 +42,7 @@
             {
                 return this.numberOfColors;
             }
+
             set
             {
                 if (value < 2)
@@ -56,15 +58,16 @@
         {
             var print = new StringBuilder();
 
-            if (Size != null)
+            if (this.Size != null)
             {
                 print.AppendFormat("    Size: {0:F1}inch\n\r", this.Size);
             }
 
-            if (NumberOfColors != null)
+            if (this.NumberOfColors != null)
             {
                 print.AppendFormat("    Number of colors: {0:N0}\n\r", this.NumberOfColors);
             }
+
             return print.ToString();
         }
     }
