@@ -20,6 +20,5 @@
         public int PhoneNumber { get; set; }
 
         public int Duration { get; set; }
-
     }
 }

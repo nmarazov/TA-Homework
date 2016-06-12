@@ -2,10 +2,13 @@
 {
     using System;
     using System.Collections.Generic;
+    using System.Linq;
     using System.Text;
 
     public class Gsm
     {
+        private const decimal callPricePerMinute = 0.37M;
+
         private static readonly Gsm iPhone4S = new Gsm("iPhone 4S", "Apple", "Ivan", 500,  
             new Battery(BatteryType.Li_Ion, 48, 24), 
             new Display(4.5M, 16000000));
@@ -108,12 +111,14 @@
             {
                 var callInfo = new StringBuilder();
                 callInfo.AppendFormat("{0} calls in CallHistory\n\r", callHistory.Count);
-
-                for (int i = 0; i < callHistory.Count; i++)
+                if (callHistory.Count != 0)
                 {
-                    callInfo.AppendFormat("Call {0} from {1} at {2}\n\r", i + 1, callHistory[i].Date, callHistory[i].Time);
-                    callInfo.AppendFormat("Number: {0}\n\r", callHistory[i].PhoneNumber);
-                    callInfo.AppendFormat("Duration: {0}\n\r", callHistory[i].Duration);
+                    for (int i = 0; i < callHistory.Count; i++)
+                    {
+                        callInfo.AppendFormat("Call {0} from {1} at {2}\n\r", i + 1, callHistory[i].Date, callHistory[i].Time);
+                        callInfo.AppendFormat("Number: {0}\n\r", callHistory[i].PhoneNumber);
+                        callInfo.AppendFormat("Duration: {0}\n\r", callHistory[i].Duration);
+                    }
                 }
 
                 return callInfo.ToString();
@@ -125,7 +130,7 @@
 
         public void AddCall(DateTime dateTime, int phoneNumber, int duration)
         {
-            callHistory.Add(new Call(dateTime,phoneNumber,duration));
+            this.callHistory.Add(new Call(dateTime,phoneNumber,duration));
         }
 
         public void DeleteCall(int Id)
@@ -135,7 +140,28 @@
 
         public void ClearCallHistory()
         {
-            callHistory = new List<Call>();
+            this.callHistory = new List<Call>();
+        }
+
+        public decimal CallPrice()
+        {
+            decimal result = 0;
+
+            for (int i = 0; i < callHistory.Count; i++)
+            {
+                result += (callHistory[i].Duration / 60) * callPricePerMinute;
+            }
+
+            return result;
+        }
+
+        public void RemoveLongestCall()
+        {
+            var toRemove = this.callHistory
+                .FindIndex(c => c.Duration == this.callHistory
+                .Max(call => call.Duration));
+
+            DeleteCall(toRemove);
         }
 
         public override string ToString()
