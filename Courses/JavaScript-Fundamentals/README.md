@@ -6,7 +6,7 @@
   01. Javascript-Development-Tools
   02. Introduction to JavaScript Development
   03. Data types and Variables
-  04. Operators and Expressions
+  04. [Operators and Expressions](https://github.com/nmarazov/TA-Homework/tree/master/Courses/JavaScript-Fundamentals/04OperatorsAndExpressions)
   05. Conditional Statements
   06. Loops
   07. Arrays
