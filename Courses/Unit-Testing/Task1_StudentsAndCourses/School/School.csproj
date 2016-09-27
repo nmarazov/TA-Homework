@@ -40,14 +40,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Course.cs" />
-    <Compile Include="School.cs" />
-    <Compile Include="Student.cs" />
+    <Compile Include="Common\GlobalConstants.cs" />
+    <Compile Include="Common\Validator.cs" />
+    <Compile Include="Contracts\ICourse.cs" />
+    <Compile Include="Contracts\ISchool.cs" />
+    <Compile Include="Contracts\IStudent.cs" />
+    <Compile Include="Model\Course.cs" />
+    <Compile Include="Model\School.cs" />
+    <Compile Include="Model\Student.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
