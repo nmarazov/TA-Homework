@@ -1,10 +1,11 @@
-﻿namespace Model.DefiningClasses
-{
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using Model.DefiningClasses.Models.Enums;
 
+namespace Model.DefiningClasses.Models
+{
     public class Gsm
     {
         public static readonly Gsm IPhone4S = new Gsm("iPhone 4S", "Apple", "Ivan", 500, new Battery(BatteryType.Li_Ion, 48, 24), new Display(4.5M, 16000000));

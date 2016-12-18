@@ -1,8 +1,7 @@
-﻿namespace Model.DefiningClasses
-{
-    using System;
-    using System.Collections.Generic;
+﻿using System;
 
+namespace Model.DefiningClasses.Models
+{
     public class Call
     {
         public Call(DateTime dateTime, int phoneNumber, int duration)

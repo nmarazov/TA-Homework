@@ -4,25 +4,12 @@
 
     public class Path
     {
-        private List<Point3D> pointList;
-
         public Path()
         {
-            this.pointList = new List<Point3D>();
+            this.PointList = new List<Point3D>();
         }
 
-        public List<Point3D> PointList
-        {
-            get
-            {
-                return this.pointList;
-            }
-
-            set
-            {
-                this.pointList = value;
-            }
-        }
+        public List<Point3D> PointList { get; set; }
 
         public void AddPoint(Point3D point)
         {

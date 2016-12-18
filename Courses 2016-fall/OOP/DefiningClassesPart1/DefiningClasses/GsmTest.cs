@@ -1,4 +1,7 @@
-﻿namespace DefiningClasses
+﻿using Model.DefiningClasses.Models;
+using Model.DefiningClasses.Models.Enums;
+
+namespace DefiningClasses
 {
     using System;
     using System.Collections.Generic;

@@ -1,8 +1,9 @@
-﻿namespace Model.DefiningClasses
-{
-    using System;
-    using System.Text;
+﻿using System;
+using System.Text;
+using Model.DefiningClasses.Models.Enums;
 
+namespace Model.DefiningClasses.Models
+{
     public class Battery
     {
         private int? hoursIdle;

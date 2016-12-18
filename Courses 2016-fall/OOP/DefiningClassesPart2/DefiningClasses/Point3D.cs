@@ -14,7 +14,10 @@
             this.Z = z;
         }
 
-        public static Point3D PointO { get; set; }
+        public static Point3D PointO
+        {
+            get { return pointO; }
+        }
 
         public double X { get; set; }
 
@@ -53,7 +56,7 @@
 
         public override string ToString()
         {
-            return string.Format("{{{0}, {1}, {2}}}", this.X, this.Y, this.Z);
+            return $"{{{this.X}, {this.Y}, {this.Z}}}";
         }
     }
 }

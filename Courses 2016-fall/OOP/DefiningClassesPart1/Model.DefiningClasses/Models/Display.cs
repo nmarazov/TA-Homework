@@ -1,8 +1,8 @@
-﻿namespace Model.DefiningClasses
-{
-    using System;
-    using System.Text;
+﻿using System;
+using System.Text;
 
+namespace Model.DefiningClasses.Models
+{
     public class Display
     {
         private decimal? size;

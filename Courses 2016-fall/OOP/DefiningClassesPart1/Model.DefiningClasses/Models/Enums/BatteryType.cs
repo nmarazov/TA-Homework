@@ -1,4 +1,4 @@
-﻿namespace Model.DefiningClasses
+﻿namespace Model.DefiningClasses.Models.Enums
 {
     public enum BatteryType
     {

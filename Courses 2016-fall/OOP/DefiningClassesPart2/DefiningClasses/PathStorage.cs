@@ -8,9 +8,9 @@
         {
             using (StreamWriter sw = new StreamWriter("..//..//path" + pathIdentifier + ".txt"))
             {
-                for (int i = 0; i < path.PointList.Count; i++)
+                foreach (Point3D point3D in path.PointList)
                 {
-                    sw.WriteLine(path.PointList[i]);
+                    sw.WriteLine(point3D);
                 }
             }
         }
@@ -21,7 +21,7 @@
 
             using (StreamReader sr = new StreamReader(filePath))
             {
-                while (sr.EndOfStream == false)
+                while (!sr.EndOfStream)
                 {
                     string nextPointTxt = sr.ReadLine();
                     Point3D nextPoint = Point3D.Parse(nextPointTxt);
