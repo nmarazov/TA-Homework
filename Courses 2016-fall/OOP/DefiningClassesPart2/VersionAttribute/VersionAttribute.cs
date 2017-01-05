@@ -3,8 +3,7 @@
     using System;
     using System.Collections.Generic;
 
-    class VersionAttribute
+    public class VersionAttribute
     {
-
     }
 }

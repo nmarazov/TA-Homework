@@ -1,7 +1,7 @@
-﻿using System;
-
-namespace Point3D
+﻿namespace Point3D
 {
+    using System;
+
     public static class PointDistance
     {
         public static double Distance(Point3D firstPoint, Point3D secondPoint)

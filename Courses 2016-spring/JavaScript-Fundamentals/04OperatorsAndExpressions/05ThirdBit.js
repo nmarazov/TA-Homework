@@ -1,7 +1,7 @@
-function bit(dec) {
-
-    var a = +dec[0];
-
-var b = (a >>> 3).toString(2) + "";
-console.log(b[b.length - 1]);
+function solve (args) {
+    var a = +args[0]
+    var b = (a >>> 3).toString(2) + ''
+    console.log(b[b.length - 1])
 }
+
+solve('52651496')
