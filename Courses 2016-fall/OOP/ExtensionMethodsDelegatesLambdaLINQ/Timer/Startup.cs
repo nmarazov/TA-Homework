@@ -1,13 +1,11 @@
 ﻿namespace Timer
 {
-    class Startup
-
+    public class Startup
     {
-        static void Main()
+        public static void Main()
         {
-            Timer timer = new Timer(2); // <-- Change seconds here
+            Timer timer = new Timer(3); // <-- Change seconds here
             timer.Invoke();
-        
         }
     }
 }

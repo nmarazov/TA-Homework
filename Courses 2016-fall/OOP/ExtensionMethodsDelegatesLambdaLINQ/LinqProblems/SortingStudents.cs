@@ -6,7 +6,6 @@
 
     public static class SortingStudents
     {   
-
         public static void GroupNumberSort(this IEnumerable<Student> students)
         {
             var sortedStudents = students
@@ -15,9 +14,10 @@
 
             foreach (var item in sortedStudents)
             {
-                Console.WriteLine("Group number: {0} - Student: {1} {2}", item.GroupNumber, item.FirstName, item.LastName);
+                Console.WriteLine($"Group number: {item.GroupNumber} - Student: {item.FirstName} {item.LastName}");
             }
         }
+
         public static void PrintData(this IEnumerable<Student> data)
         {
             foreach (var item in data)
@@ -25,17 +25,12 @@
                 Console.WriteLine($"{item.FirstName} {item.LastName}");
             }
         }
+
         public static void SortNumbers(IEnumerable<int> numbers)
         {
-            //Lambda:
             var sortedNumbers = numbers
                 .Where(x => (x % 3 == 0) && (x % 7 == 0))
                 .ToList();
-            ////Linq:
-            //    var sortedNumbers = from number in numbers
-            //                        select (decimal)number
-            //                        where (number % 3 == 0) && (number % 7 == 0)
-            //                        select number;
 
             var result = string.Join(" ", sortedNumbers);
             Console.WriteLine(result);
@@ -48,12 +43,12 @@
                 .ToArray();
 
             return groupStudents;
-
         }
+
         public static Student[] LastNameBiggerThanFirstName(Student[] students)
         {
             var result = students
-                .Where(x => (x.FirstName).CompareTo(x.LastName) < 0)
+                .Where(x => x.FirstName.CompareTo(x.LastName) < 0)
                 .ToArray();
 
             return result;
@@ -122,8 +117,6 @@
                                   join gr in Group.Groups on student.GroupNumber equals gr.GroupNumber
                                   where student.GroupNumber == 1
                                   select new { GroupName = gr.DepartmentName, student.FirstName, student.LastName };
-
-
             foreach (var item in mathDepartament)
             {
                 Console.WriteLine(item);

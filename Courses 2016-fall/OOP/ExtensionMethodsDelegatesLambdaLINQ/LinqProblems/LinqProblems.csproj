@@ -7,8 +7,8 @@
     <ProjectGuid>{81E4EE19-2411-4F8B-9BB3-6E4B550372C2}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>LinqProblem3To6</RootNamespace>
-    <AssemblyName>LinqProblem3To6</AssemblyName>
+    <RootNamespace>LinqProblems</RootNamespace>
+    <AssemblyName>LinqProblems</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

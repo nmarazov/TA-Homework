@@ -1,8 +1,8 @@
 ﻿namespace Extensions
 {
     using System;
-    using System.Linq;
     using System.Collections.Generic;
+    using System.Linq;
 
     public static class IEnumerableExtensions
     {
@@ -55,7 +55,6 @@
                    .Average();
 
             return result;
-
         }
 
         public static string Print<T>(IEnumerable<T> genericGroup)

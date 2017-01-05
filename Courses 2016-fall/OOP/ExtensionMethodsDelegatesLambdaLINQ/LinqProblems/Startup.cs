@@ -4,9 +4,9 @@
     using System.Collections.Generic;
     using System.Linq;
 
-    class Startup
+    public class Startup
     {
-        static void Main()  //Uncomment to test :)
+        public static void Main()
         {
             var students = Student.StudentsInfo();
 
@@ -49,10 +49,10 @@
             //Problem 13. Extract students by marks
             var anonArray = new[]
             {
-                new { FullName = "Georgi Kokov", Marks = new List<int> { 2, 4, 5, 4, 2} },
-                new { FullName = "Shoko Mokov", Marks = new List<int> { 2, 2, 4, 3, 6} },
-                new { FullName = "Zaio Baio", Marks = new List<int> { 5, 6, 5, 4, 3} },
-                new { FullName = "Mimo Pitona", Marks = new List<int> { 4, 5, 4, 6, 6} }
+                new { FullName = "Georgi Kokov", Marks = new List<int> { 2, 4, 5, 4, 2 } },
+                new { FullName = "Shoko Mokov", Marks = new List<int> { 2, 2, 4, 3, 6 } },
+                new { FullName = "Zaio Baio", Marks = new List<int> { 5, 6, 5, 4, 3 } },
+                new { FullName = "Mimo Pitona", Marks = new List<int> { 4, 5, 4, 6, 6 } }
             };
 
             //var studentsWith6 = anonArray

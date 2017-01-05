@@ -4,14 +4,12 @@
     using System.Collections.Generic;
     using System.Linq;
     using System.Text;
-    
 
-    class Startup
+    public class Startup
     {
-        static void Main()
+        public static void Main()
         {
             //Problem 1. StringBuilder.Substring
-
             StringBuilder builder = new StringBuilder();
             builder.Append("teststring");
 
@@ -19,7 +17,6 @@
             Console.WriteLine(testSubstring);
 
             //Problem 2. IEnumerable extensions
-
             IEnumerable<int> result = from value in Enumerable.Range(0, 5)
                                       select value;
 

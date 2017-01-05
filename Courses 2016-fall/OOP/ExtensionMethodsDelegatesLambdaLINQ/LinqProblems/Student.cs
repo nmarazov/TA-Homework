@@ -5,9 +5,15 @@
 
     public class Student
     {
-        
-        public Student(string firstName, string lastName, int age, string fn, string tel, string email
-            , List<int> marks, int groupNumber)
+        public Student(
+            string firstName, 
+            string lastName, 
+            int age, 
+            string fn, 
+            string tel, 
+            string email, 
+            List<int> marks, 
+            int groupNumber)
         {
             this.FirstName = firstName;
             this.LastName = lastName;
@@ -20,13 +26,28 @@
         }
 
         public string FirstName { get; set; }
+
         public string LastName { get; set; }
+
         public string FN { get; set; }
+
         public string Tel { get; set; }
+
         public string Email { get; set; }
+
         public List<int> Marks { get; set; }
+
         public int GroupNumber { get; set; }
+
         public int Age { get; set; }
+
+        public static void Print(Student[] studentList)
+        {
+            foreach (var item in studentList)
+            {
+                Console.WriteLine($"{item.FirstName} {item.LastName}");
+            }
+        }
 
         public static Student[] StudentsInfo()
         {
@@ -42,14 +63,6 @@
         public override string ToString()
         {
             return $"{this.FirstName} {this.LastName}";
-        }
-
-        public static void Print(Student[] studentList)
-        {
-            foreach (var item in studentList)
-            {
-                Console.WriteLine($"{item.FirstName} {item.LastName}");
-            }
         }
     }
 }

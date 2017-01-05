@@ -1,5 +1,4 @@
-﻿
-namespace LinqProblems
+﻿namespace LinqProblems
 {
     using System;
     using System.Collections.Generic;
@@ -13,7 +12,6 @@ namespace LinqProblems
             new Group(3, "Literature"),
             new Group(4, "Physics")
         };
-
 
         public Group(int grNum, string depName)
         {
@@ -30,6 +28,7 @@ namespace LinqProblems
         }
 
         public int GroupNumber { get; set; }
+
         public string DepartmentName { get; set; }
     }
 }

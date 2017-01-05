@@ -1,5 +1,4 @@
-﻿
-namespace Timer
+﻿namespace Timer
 {
     using System;
     using System.Diagnostics;
@@ -7,12 +6,13 @@ namespace Timer
     public class Timer
     {
         private int seconds;
-        private delegate void SayTime();
 
         public Timer(int seconds)
         {
             this.Seconds = seconds;
         }
+
+        private delegate void SayTime();
 
         public int Seconds
         {
@@ -20,14 +20,21 @@ namespace Timer
             {
                 return this.seconds;
             }
+
             set
             {
                 if (value < 0)
                 {
                     throw new ArgumentException("Second interval cannot be negative!");
                 }
+
                 this.seconds = value;
             }
+        }
+
+        public static void SayTheTime()
+        {
+            Console.WriteLine("The time is : " + DateTime.Now.TimeOfDay);
         }
 
         public void Invoke()
@@ -43,14 +50,10 @@ namespace Timer
                 {
                     continue;
                 }
+
                 printTime.Invoke();
                 timer.Restart();
             }
-        }
-
-        public static void SayTheTime()
-        {
-            Console.WriteLine("The time is : " + DateTime.Now.TimeOfDay);
         }
     }
 }
